@@ -80,7 +80,7 @@ prices = {
                     "$20.00", "$20.00"]
 }
 
-# Custom CSS to build table
+# CSS to build table
 custom_css = """
 <style>
 table {
@@ -98,7 +98,7 @@ td:nth-child(1) {
 """
 
 
-# Inject custom CSS with markdown
+# inject CSS with markdown
 st.markdown(custom_css, unsafe_allow_html=True)
 
 # Convert the data to a pandas DataFrame
@@ -283,14 +283,14 @@ plant_details = {
     }
 }
 
-# Individual plant listings with new structured data
+# Individual plant listings with structured data
 for plant in plants:
     st.markdown(f"<h2 id='{plant.replace(' ', '-').lower()}'>{plant}</h2>", unsafe_allow_html=True)
 
     # Creating three columns for table, spacer, and image
     col1, spacer, col2 = st.columns([3, 1, 2])  # Adjust the ratio as needed
 
-    # Displaying basic information in the first column
+    # Displaying information in first column
     with col1:
         st.write("<br><br><br>", unsafe_allow_html=True)
 
@@ -304,14 +304,11 @@ for plant in plants:
     with spacer:
         st.write("")
 
-    # HTML image in the third column
     with col2:
-        # Retrieve the image link from the plant details
         image_url = plant_details[plant].get("img_link", "")
         if image_url:
             st.image(image_url, width=300)  # Adjust width as needed
 
-    # End of columns, now display care instructions
     st.markdown("### Care Instructions")
     for key in ["Light", "Soil", "Water", "Atmosphere & Humidity", "Fertilizer", "Propagation"]:
         st.markdown(f"- **{key}**: {plant_details[plant][key]}")
@@ -322,7 +319,6 @@ st.markdown("<a name='plant-care-advice'></a>", unsafe_allow_html=True)
 st.markdown("## Plant Care Advice", unsafe_allow_html=True)
 st.markdown("### Guide to plant lighting", unsafe_allow_html=True)
 
-# Centering the image using markdown
-# Centering the image and reducing its size by 50%
+# Centering  image  
 image_url = "https://tonkadale.com/product_images/uploaded_images/light-diagram-v4.jpg"
 st.markdown("<div style='text-align: center;'><img src='{}' alt='Light Requirements for Plants' style='width: 85%;'></div>".format(image_url), unsafe_allow_html=True)
