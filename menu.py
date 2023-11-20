@@ -21,7 +21,7 @@ with col1:
     Welcome to my plant shop! 
 
     * **About** 
-      * I live on the UWS and grow a lot of plants. Pruning is a basic element of plant care, and at this point, I'm generating a few plants a month from maintenance - I am a small-time plantfarmer by accident. See below for context.
+      * I live on the UWS and grow a lot of plants. Pruning is a basic element of plant care, and at this point, I'm generating a few plants a month from maintenance - I am a small-time plant farmer, by accident. See below for context.
 
     * **Offering** 
       * I'm selling plants. I have any stage of plant development: from a single cutting, up to fully mature and custom arrangements.
@@ -33,7 +33,7 @@ with col1:
         * <u>Custom arrangements</u>: Get the perfect plants for your living space. Have a concrete vision, but no green thumb? I'll make it for you. Don't know what you want? We'll figure it out.
 
     * **Pricing** 
-      * The table is priced per-stem, in consideration of dirt and nursery pots, as relevant. e.g., 10 pothos cuttings are \$5, and 4 potted aglaonema stems are $40. 
+      * The table is priced per-stem, in consideration of dirt and nursery pots, as relevant. e.g., 10 pothos cuttings are \$5, and 4 potted aglaonema stems are $60. 
 
     * **Availability** 
       * What I have listed is what I have readily available. I have plenty of other species.
